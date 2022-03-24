@@ -27,18 +27,9 @@ namespace WpfApp19.ViewModels
                 OnPropertyChanged();
             }
         }
-        private int number2;
-        public int Number2
-        {
-            get => number2;
-            set
-            {
-                number2 = value;
-                OnPropertyChanged();
-            }
-        }
-        private int number3;
-        public int Number3
+        
+        private double number3;
+        public double Number3
         {
             get => number3;
             set
@@ -50,15 +41,13 @@ namespace WpfApp19.ViewModels
         public ICommand AddCommand { get; }
         private void OnAddCommandExecute(object p)
         {
-            Number3 = Ariph.Add(Number1,Number2);
+            Number3 = Ariph.Add(Number1);
         }
         private bool CanAddCommandExecuted (object p)
         {
-            if (Number1 != 0 || Number2 != 0)
+           
                 return true;
-            else
-                return
-                    false;
+   
         }
         public MainWindowViewModel()
         {

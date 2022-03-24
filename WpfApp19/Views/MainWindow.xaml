@@ -12,8 +12,7 @@
     </Window.DataContext>
     <StackPanel>
         <TextBox Text="{Binding Path=Number1}"/>
-        <TextBox Text="{Binding Path=Number2}"/>
-        <Button Content="Суммировать" Command="{Binding Path=AddCommand}"/>
+        <Button Content="Окружность" Command="{Binding Path=AddCommand}"/>
         <TextBox Text="{Binding Path=Number3}"/>
     </StackPanel>
 </Window>
